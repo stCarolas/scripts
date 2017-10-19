@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
-urxvt -e sh -c "compgen -c | /home/stcarolas/.fzf/bin/fzf > /tmp/choice"
+urxvt --title fzfmenu -g 50x20 -e sh -c "compgen -c | /home/stcarolas/.fzf/bin/fzf > /tmp/choice"
 exec $(cat /tmp/choice)
