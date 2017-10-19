@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+urxvt -e sh -c "compgen -c | /home/stcarolas/.fzf/bin/fzf > /tmp/choice"
+exec $(cat /tmp/choice)
