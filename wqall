@@ -1,0 +1,3 @@
+#!/usr/bin/env groovy
+"git config --global http.proxy http://localhost:3128"
+"git config --global https.proxy https://localhost:3128"
